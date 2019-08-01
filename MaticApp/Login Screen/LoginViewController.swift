@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         configureView()
     }
-
+    
     private func configureView() {
         self.view.backgroundColor = UIColor.white
         self.view.addSubview(loginView)
@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
             self.signIn()
         }
     }
-
+    
     private func signIn() {
         guard let username = loginView.usernameTextField.text, !username.isEmpty
             else {
@@ -46,15 +46,16 @@ class LoginViewController: UIViewController {
         self.viewModel.username = username
         self.viewModel.password = password
         
-        let result = self.viewModel.authenticateUser()
-        if result {
+        self.viewModel.authenticateUser(completion: {(success, error) in
+            if success {
             let vc = HomeViewController()
-            vc.viewModel.username = username
-            vc.viewModel.password = password
-            self.navigationController?.pushViewController(vc, animated: true)
-        } else {
-            loginView.errorLabel.isHidden = false
-            loginView.errorLabel.text = "username or password does not match"
-        }
+                vc.viewModel.username = username
+                vc.viewModel.password = password
+                self.navigationController?.pushViewController(vc, animated: true)
+            } else {
+                self.loginView.errorLabel.isHidden = false
+                self.loginView.errorLabel.text = error!
+            }
+        })
     }
 }
