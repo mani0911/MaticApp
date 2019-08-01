@@ -125,6 +125,9 @@
 			children = (
 				796012C422EDD01300B8DCEF /* AppDelegate.swift */,
 				79B2A20622EF4F01005F410D /* Landing Screen */,
+				79B2A27422F2C169005F410D /* Login Screen */,
+				79B2A27522F2C17A005F410D /* Signup Screen */,
+				79B2A20822EF4F4C005F410D /* Resources */,
 				796012CD22EDD01500B8DCEF /* LaunchScreen.storyboard */,
 				796012D022EDD01500B8DCEF /* Info.plist */,
 			);
@@ -146,6 +149,36 @@
 				796012C622EDD01300B8DCEF /* LandingViewController.swift */,
 			);
 			path = "Landing Screen";
+			sourceTree = "<group>";
+		};
+		79B2A20822EF4F4C005F410D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79B2A20422EF4DE3005F410D /* Common.swift */,
+				79B2A20D22EFDA67005F410D /* SHA256.swift */,
+				79B2A20F22EFDA73005F410D /* SHA256-Bridging-Header.h */,
+				79B2A21022EFF1F2005F410D /* Keychain.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		79B2A27422F2C169005F410D /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				79B2A27622F2C1BD005F410D /* LoginViewController.swift */,
+				79B2A27A22F2C2C0005F410D /* LoginViewModel.swift */,
+				79B2A1FE22EE0DAA005F410D /* UserInputView.swift */,
+			);
+			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		79B2A27522F2C17A005F410D /* Signup Screen */ = {
+			isa = PBXGroup;
+			children = (
+				79B2A27822F2C1D1005F410D /* SignUpViewController.swift */,
+				79B2A27C22F2C3BE005F410D /* SignUpViewModel.swift */,
+			);
+			path = "Signup Screen";
 			sourceTree = "<group>";
 		};
 		A2DDC2D9F900440A3ABAD981 /* Frameworks */ = {
