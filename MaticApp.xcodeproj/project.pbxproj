@@ -11,6 +11,8 @@
 		796012CC22EDD01500B8DCEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796012CB22EDD01500B8DCEF /* Assets.xcassets */; };
 		796012CF22EDD01500B8DCEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796012CD22EDD01500B8DCEF /* LaunchScreen.storyboard */; };
 		796012DA22EDD01500B8DCEF /* MaticAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796012D922EDD01500B8DCEF /* MaticAppTests.swift */; };
+		8167AD873C6F5F5CAFF6BD0F /* Pods_MaticAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC0AA80ED4BB724D5619C5A /* Pods_MaticAppTests.framework */; };
+		F93187A142540D6917385B5F /* Pods_MaticApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA9B8A39C0A4A8536F1F295 /* Pods_MaticApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64F9E2DFAA05AACD33B1E561 /* Pods-MaticApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaticApp.release.xcconfig"; path = "Target Support Files/Pods-MaticApp/Pods-MaticApp.release.xcconfig"; sourceTree = "<group>"; };
 		796012C122EDD01300B8DCEF /* MaticApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaticApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796012C422EDD01300B8DCEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		796012CB22EDD01500B8DCEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +35,11 @@
 		796012D522EDD01500B8DCEF /* MaticAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaticAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		796012D922EDD01500B8DCEF /* MaticAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaticAppTests.swift; sourceTree = "<group>"; };
 		796012DB22EDD01500B8DCEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BA9B8A39C0A4A8536F1F295 /* Pods_MaticApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaticApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC0AA80ED4BB724D5619C5A /* Pods_MaticAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaticAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA17C6A51D82F7680FB52D0A /* Pods-MaticAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaticAppTests.release.xcconfig"; path = "Target Support Files/Pods-MaticAppTests/Pods-MaticAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F99FAEF52524E0ECB73F480B /* Pods-MaticApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaticApp.debug.xcconfig"; path = "Target Support Files/Pods-MaticApp/Pods-MaticApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FAB8ACD3665E7A648E2B8D09 /* Pods-MaticAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaticAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MaticAppTests/Pods-MaticAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93187A142540D6917385B5F /* Pods_MaticApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,18 +55,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8167AD873C6F5F5CAFF6BD0F /* Pods_MaticAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210D3BDAF262114CAB751870 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F99FAEF52524E0ECB73F480B /* Pods-MaticApp.debug.xcconfig */,
+				64F9E2DFAA05AACD33B1E561 /* Pods-MaticApp.release.xcconfig */,
+				FAB8ACD3665E7A648E2B8D09 /* Pods-MaticAppTests.debug.xcconfig */,
+				BA17C6A51D82F7680FB52D0A /* Pods-MaticAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		796012B822EDD01300B8DCEF = {
 			isa = PBXGroup;
 			children = (
 				796012C322EDD01300B8DCEF /* MaticApp */,
 				796012D822EDD01500B8DCEF /* MaticAppTests */,
 				796012C222EDD01300B8DCEF /* Products */,
+				210D3BDAF262114CAB751870 /* Pods */,
+				A2DDC2D9F900440A3ABAD981 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +112,15 @@
 			path = MaticAppTests;
 			sourceTree = "<group>";
 		};
+		A2DDC2D9F900440A3ABAD981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BA9B8A39C0A4A8536F1F295 /* Pods_MaticApp.framework */,
+				7EC0AA80ED4BB724D5619C5A /* Pods_MaticAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 796012DE22EDD01500B8DCEF /* Build configuration list for PBXNativeTarget "MaticApp" */;
 			buildPhases = (
+				9F9D8ADEBBBF62AC594342D1 /* [CP] Check Pods Manifest.lock */,
 				796012BD22EDD01300B8DCEF /* Sources */,
 				796012BE22EDD01300B8DCEF /* Frameworks */,
 				796012BF22EDD01300B8DCEF /* Resources */,
+				6A3CFFAD15D17507EE6400CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 796012E122EDD01500B8DCEF /* Build configuration list for PBXNativeTarget "MaticAppTests" */;
 			buildPhases = (
+				C198FAE31BFE3865D73C03B8 /* [CP] Check Pods Manifest.lock */,
 				796012D122EDD01500B8DCEF /* Sources */,
 				796012D222EDD01500B8DCEF /* Frameworks */,
 				796012D322EDD01500B8DCEF /* Resources */,
@@ -184,12 +219,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A3CFFAD15D17507EE6400CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaticApp/Pods-MaticApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaticApp/Pods-MaticApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MaticApp/Pods-MaticApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F9D8ADEBBBF62AC594342D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaticApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C198FAE31BFE3865D73C03B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaticAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		796012BD22EDD01300B8DCEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B2A20322EF10DA005F410D /* CurrencyTableViewCell.swift in Sources */,
+				79B2A27D22F2C3BE005F410D /* SignUpViewModel.swift in Sources */,
+				796012C722EDD01300B8DCEF /* LandingViewController.swift in Sources */,
 				796012C522EDD01300B8DCEF /* AppDelegate.swift in Sources */,
+				79B2A20C22EF5036005F410D /* HomeViewModel.swift in Sources */,
+				79B2A1FF22EE0DAA005F410D /* UserInputView.swift in Sources */,
+				79B2A20E22EFDA67005F410D /* SHA256.swift in Sources */,
+				79B2A20522EF4DE3005F410D /* Common.swift in Sources */,
+				79B2A27B22F2C2C0005F410D /* LoginViewModel.swift in Sources */,
+				79B2A27922F2C1D1005F410D /* SignUpViewController.swift in Sources */,
+				79B2A27322F285CB005F410D /* ImageFetcher.swift in Sources */,
+				79B2A20122EF0728005F410D /* HomeViewController.swift in Sources */,
+				79B2A27722F2C1BD005F410D /* LoginViewController.swift in Sources */,
+				79B2A21122EFF1F2005F410D /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +393,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -335,12 +448,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		796012DF22EDD01500B8DCEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F99FAEF52524E0ECB73F480B /* Pods-MaticApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -359,6 +474,7 @@
 		};
 		796012E022EDD01500B8DCEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F9E2DFAA05AACD33B1E561 /* Pods-MaticApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +493,7 @@
 		};
 		796012E222EDD01500B8DCEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB8ACD3665E7A648E2B8D09 /* Pods-MaticAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -397,6 +514,7 @@
 		};
 		796012E322EDD01500B8DCEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA17C6A51D82F7680FB52D0A /* Pods-MaticAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
