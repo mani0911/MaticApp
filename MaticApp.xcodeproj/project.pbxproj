@@ -3,14 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		796012C522EDD01300B8DCEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796012C422EDD01300B8DCEF /* AppDelegate.swift */; };
+		796012C722EDD01300B8DCEF /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796012C622EDD01300B8DCEF /* LandingViewController.swift */; };
 		796012CC22EDD01500B8DCEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796012CB22EDD01500B8DCEF /* Assets.xcassets */; };
 		796012CF22EDD01500B8DCEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796012CD22EDD01500B8DCEF /* LaunchScreen.storyboard */; };
 		796012DA22EDD01500B8DCEF /* MaticAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796012D922EDD01500B8DCEF /* MaticAppTests.swift */; };
+		79B2A1FF22EE0DAA005F410D /* UserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A1FE22EE0DAA005F410D /* UserInputView.swift */; };
+		79B2A20122EF0728005F410D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A20022EF0728005F410D /* HomeViewController.swift */; };
+		79B2A20322EF10DA005F410D /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A20222EF10DA005F410D /* CurrencyTableViewCell.swift */; };
+		79B2A20522EF4DE3005F410D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A20422EF4DE3005F410D /* Common.swift */; };
+		79B2A20C22EF5036005F410D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A20B22EF5036005F410D /* HomeViewModel.swift */; };
+		79B2A20E22EFDA67005F410D /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A20D22EFDA67005F410D /* SHA256.swift */; };
+		79B2A21122EFF1F2005F410D /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A21022EFF1F2005F410D /* Keychain.swift */; };
+		79B2A27322F285CB005F410D /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A27222F285CB005F410D /* ImageFetcher.swift */; };
+		79B2A27722F2C1BD005F410D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A27622F2C1BD005F410D /* LoginViewController.swift */; };
+		79B2A27922F2C1D1005F410D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A27822F2C1D1005F410D /* SignUpViewController.swift */; };
+		79B2A27B22F2C2C0005F410D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A27A22F2C2C0005F410D /* LoginViewModel.swift */; };
+		79B2A27D22F2C3BE005F410D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2A27C22F2C3BE005F410D /* SignUpViewModel.swift */; };
 		8167AD873C6F5F5CAFF6BD0F /* Pods_MaticAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC0AA80ED4BB724D5619C5A /* Pods_MaticAppTests.framework */; };
 		F93187A142540D6917385B5F /* Pods_MaticApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA9B8A39C0A4A8536F1F295 /* Pods_MaticApp.framework */; };
 /* End PBXBuildFile section */
@@ -29,12 +42,26 @@
 		64F9E2DFAA05AACD33B1E561 /* Pods-MaticApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaticApp.release.xcconfig"; path = "Target Support Files/Pods-MaticApp/Pods-MaticApp.release.xcconfig"; sourceTree = "<group>"; };
 		796012C122EDD01300B8DCEF /* MaticApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaticApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796012C422EDD01300B8DCEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		796012C622EDD01300B8DCEF /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		796012CB22EDD01500B8DCEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796012CE22EDD01500B8DCEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		796012D022EDD01500B8DCEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		796012D522EDD01500B8DCEF /* MaticAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaticAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		796012D922EDD01500B8DCEF /* MaticAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaticAppTests.swift; sourceTree = "<group>"; };
 		796012DB22EDD01500B8DCEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79B2A1FE22EE0DAA005F410D /* UserInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputView.swift; sourceTree = "<group>"; };
+		79B2A20022EF0728005F410D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		79B2A20222EF10DA005F410D /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		79B2A20422EF4DE3005F410D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		79B2A20B22EF5036005F410D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		79B2A20D22EFDA67005F410D /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		79B2A20F22EFDA73005F410D /* SHA256-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SHA256-Bridging-Header.h"; sourceTree = "<group>"; };
+		79B2A21022EFF1F2005F410D /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		79B2A27222F285CB005F410D /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		79B2A27622F2C1BD005F410D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		79B2A27822F2C1D1005F410D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		79B2A27A22F2C2C0005F410D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		79B2A27C22F2C3BE005F410D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		7BA9B8A39C0A4A8536F1F295 /* Pods_MaticApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaticApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC0AA80ED4BB724D5619C5A /* Pods_MaticAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaticAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA17C6A51D82F7680FB52D0A /* Pods-MaticAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaticAppTests.release.xcconfig"; path = "Target Support Files/Pods-MaticAppTests/Pods-MaticAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				796012C422EDD01300B8DCEF /* AppDelegate.swift */,
+				79B2A20622EF4F01005F410D /* Landing Screen */,
 				796012CD22EDD01500B8DCEF /* LaunchScreen.storyboard */,
 				796012D022EDD01500B8DCEF /* Info.plist */,
 			);
@@ -110,6 +138,14 @@
 				796012DB22EDD01500B8DCEF /* Info.plist */,
 			);
 			path = MaticAppTests;
+			sourceTree = "<group>";
+		};
+		79B2A20622EF4F01005F410D /* Landing Screen */ = {
+			isa = PBXGroup;
+			children = (
+				796012C622EDD01300B8DCEF /* LandingViewController.swift */,
+			);
+			path = "Landing Screen";
 			sourceTree = "<group>";
 		};
 		A2DDC2D9F900440A3ABAD981 /* Frameworks */ = {
