@@ -12,13 +12,15 @@ class LoginViewModel {
     public var username = ""
     public var password = ""
     
-    public func authenticateUser() -> Bool {
+    public func authenticateUser(completion:@escaping (Bool, String?) -> ()) {
         if let password = Keychain.load(key: username) {
             if password == self.password.data(using: .utf8)! {
-                return true
+                completion(true, nil)
+            } else {
+                completion(false, "wrong password!")
             }
-            return false
+        } else {
+            completion(false, "username does not exists!")
         }
-        return false
     }
 }

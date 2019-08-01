@@ -41,8 +41,9 @@ class MaticAppTests: XCTestCase {
     }
 
     func testAuthenticateUser() {
-        let result = logInVM?.authenticateUser()
-        XCTAssertTrue(result!)
+        logInVM?.authenticateUser(completion: {success, error in
+            XCTAssertTrue(success)
+        })
     }
     
     func testDecypt() {
