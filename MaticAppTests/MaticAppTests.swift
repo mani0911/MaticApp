@@ -10,25 +10,43 @@ import XCTest
 @testable import MaticApp
 
 class MaticAppTests: XCTestCase {
-
+    var logInVM: LoginViewModel? = LoginViewModel()
+    var signUpVM: SignUpViewModel? = SignUpViewModel()
+    var homeVM: HomeViewModel? = HomeViewModel()
+    var randomHash: String? = "70505812440997117919"
+    var encryptHexString: String?  = "1fa7f8a28e967e665adfa77aa49ae03659040ec6984436332c43cf3a646925c9"
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        logInVM?.username = "Testing User"
+        logInVM?.password = "12345678"
+        signUpVM?.username = "Testing User"
+        signUpVM?.password = "12345678"
+        homeVM?.username = "Testing User"
+        homeVM?.password = "12345678"
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        logInVM = nil
+        signUpVM = nil
+        homeVM = nil
+        randomHash = nil
+        encryptHexString = nil
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testEncrypt() {
+        guard let result = signUpVM?.encrypt(hash: randomHash!) else {return}
+        let resultHexString = result.hexString
+        XCTAssertEqual(resultHexString, encryptHexString)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testAuthenticateUser() {
+        let result = logInVM?.authenticateUser()
+        XCTAssertTrue(result!)
     }
-
+    
+    func testDecypt() {
+        let result = homeVM?.decrypt()
+        XCTAssertEqual(result!, randomHash)
+    }
 }
