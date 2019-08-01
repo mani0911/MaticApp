@@ -17,10 +17,10 @@ class LoginViewModel {
             if password == self.password.data(using: .utf8)! {
                 completion(true, nil)
             } else {
-                completion(false, "wrong password!")
+                completion(false, "Wrong password!")
             }
         } else {
-            completion(false, "username does not exists!")
+            completion(false, "Username does not exist!")
         }
     }
 }

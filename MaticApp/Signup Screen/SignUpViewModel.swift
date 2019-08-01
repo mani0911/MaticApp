@@ -15,9 +15,8 @@ class SignUpViewModel {
     
     public func encrypt(hash: String) -> Data? {
         do {
-            let password = self.password
             let iv = Strings.initVector.data(using: .utf8)!
-            let key = try AES256.createKey(password: password.data(using: .utf8)!, salt: self.username.data(using: .utf8)!)
+            let key = try AES256.createKey(password: password.data(using: .utf8)!, salt: username.data(using: .utf8)!)
             let aes = try AES256(key: key, iv: iv)
             let encrypted = try aes.encrypt(hash.data(using: .utf8)!)
             return encrypted

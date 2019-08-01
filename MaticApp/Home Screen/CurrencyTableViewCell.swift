@@ -96,7 +96,7 @@ class CurrencyTableViewCell: UITableViewCell {
         ImageFetcher.sharedInstance.fetchImagesInfo(for: index, completion: { imageURL, success, error in
             if success {
                 if imageURL != nil {
-                    ImageFetcher.sharedInstance.fetchImage(index: index, imageURL: imageURL!, completion: { (image, error) in
+                    ImageFetcher.sharedInstance.fetchImage(index: index, imageURL: imageURL!, completion: { [unowned self] (image, error) in
                         if let randomImage = image {
                             DispatchQueue.main.async {
                                 self.currencyImageIcon.image = randomImage

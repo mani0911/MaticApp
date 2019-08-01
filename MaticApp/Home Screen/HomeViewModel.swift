@@ -17,13 +17,13 @@ class HomeViewModel {
         do {
             if let receivedData = Keychain.load(key: "\(username)-hash") {
                 let iv = Strings.initVector.data(using: .utf8)!
-                let key = try AES256.createKey(password: password.data(using: .utf8)!, salt: self.username.data(using: .utf8)!)
+                let key = try AES256.createKey(password: password.data(using: .utf8)!, salt: username.data(using: .utf8)!)
                 let aes = try AES256(key: key, iv: iv)
                 let decrypted = try aes.decrypt(receivedData)
                 let hash = String(decoding: decrypted, as: UTF8.self)
                 return hash
             }
-            return "hash fetching failed!!"
+            return "Hash fetching failed!"
         } catch {
             return "\(error.localizedDescription)"
         }
