@@ -32,13 +32,13 @@ class SignUpViewController: UIViewController {
         guard let username = loginView.usernameTextField.text, !username.isEmpty
             else {
                 loginView.errorLabel.isHidden = false
-                loginView.errorLabel.text = "username can't be left empty"
+                loginView.errorLabel.text = "Username can't be left empty!"
                 return
         }
         guard let password = loginView.passwordTextField.text, !password.isEmpty
             else {
                 loginView.errorLabel.isHidden = false
-                loginView.errorLabel.text = "password can't be left empty"
+                loginView.errorLabel.text = "Password can't be left empty!"
                 return
         }
         self.viewModel.username = username
@@ -51,7 +51,7 @@ class SignUpViewController: UIViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         } else {
             loginView.errorLabel.isHidden = false
-            loginView.errorLabel.text = "account creation failed!"
+            loginView.errorLabel.text = "Account creation failed!"
         }
     }
 }

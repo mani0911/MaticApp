@@ -32,21 +32,21 @@ class LoginViewController: UIViewController {
         guard let username = loginView.usernameTextField.text, !username.isEmpty
             else {
                 loginView.errorLabel.isHidden = false
-                loginView.errorLabel.text = "username can't be left empty"
+                loginView.errorLabel.text = "Username can't be left empty!"
                 return
         }
         
         guard let password = loginView.passwordTextField.text, !password.isEmpty
             else {
                 loginView.errorLabel.isHidden = false
-                loginView.errorLabel.text = "password can't be left empty"
+                loginView.errorLabel.text = "Password can't be left empty!"
                 return
         }
         
         self.viewModel.username = username
         self.viewModel.password = password
         
-        self.viewModel.authenticateUser(completion: {(success, error) in
+        self.viewModel.authenticateUser(completion: { [unowned self] (success, error) in
             if success {
             let vc = HomeViewController()
                 vc.viewModel.username = username
