@@ -127,6 +127,7 @@
 				79B2A20622EF4F01005F410D /* Landing Screen */,
 				79B2A27422F2C169005F410D /* Login Screen */,
 				79B2A27522F2C17A005F410D /* Signup Screen */,
+				79B2A20722EF4F1C005F410D /* Home Screen */,
 				79B2A20822EF4F4C005F410D /* Resources */,
 				796012CD22EDD01500B8DCEF /* LaunchScreen.storyboard */,
 				796012D022EDD01500B8DCEF /* Info.plist */,
@@ -151,6 +152,16 @@
 			path = "Landing Screen";
 			sourceTree = "<group>";
 		};
+		79B2A20722EF4F1C005F410D /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				79B2A20022EF0728005F410D /* HomeViewController.swift */,
+				79B2A20B22EF5036005F410D /* HomeViewModel.swift */,
+				79B2A20222EF10DA005F410D /* CurrencyTableViewCell.swift */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
 		79B2A20822EF4F4C005F410D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +170,7 @@
 				79B2A20F22EFDA73005F410D /* SHA256-Bridging-Header.h */,
 				79B2A21022EFF1F2005F410D /* Keychain.swift */,
 				796012CB22EDD01500B8DCEF /* Assets.xcassets */,
+				79B2A27222F285CB005F410D /* ImageFetcher.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
