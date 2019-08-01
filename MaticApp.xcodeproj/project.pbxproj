@@ -158,6 +158,7 @@
 				79B2A20D22EFDA67005F410D /* SHA256.swift */,
 				79B2A20F22EFDA73005F410D /* SHA256-Bridging-Header.h */,
 				79B2A21022EFF1F2005F410D /* Keychain.swift */,
+				796012CB22EDD01500B8DCEF /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
